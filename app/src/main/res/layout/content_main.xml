@@ -43,6 +43,15 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/message_text_view"
         android:layout_centerHorizontal="true"
-        android:enabled="false" />
+        android:enabled="false"
+        android:onClick="didTapReverseButton" />
+
+    <TextView
+        android:id="@+id/reverse_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reverse_button"
+        android:gravity="center"
+        android:textSize="30sp"/>
 
 </RelativeLayout>

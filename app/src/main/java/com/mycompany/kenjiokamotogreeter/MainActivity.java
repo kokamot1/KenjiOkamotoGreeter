@@ -48,6 +48,17 @@ public class MainActivity extends AppCompatActivity {
         reverseButton.setEnabled(true);
     }
 
+    public void didTapReverseButton(View view) {
+        TextView messageTextView =
+                (TextView) findViewById(R.id.message_text_view);
+        String message = messageTextView.getText().toString();
+        StringBuilder reversedMessage = new StringBuilder(message);
+        reversedMessage.reverse();
+        TextView reverseTextView =
+                (TextView) findViewById(R.id.reverse_text_view);
+        reverseTextView.setText(reversedMessage);
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
